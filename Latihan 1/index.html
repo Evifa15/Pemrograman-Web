@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        function toggleSubjects() {
+            const semesterSelect = document.getElementById('semester');
+            const subjectsDiv = document.getElementById('subjects');
+            subjectsDiv.style.display = semesterSelect.value === '1' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color: #f9f9f9; color: #333;">
+    <h1 style="text-align:center; font-family: 'Chivo', sans-serif; font-size: 2.5em;">Registration Form</h1>
+    <form style="max-width:600px; margin:auto; padding:20px; border: 1px solid #ccc; background-color: #fff; border-radius: 10px;">
+        <fieldset style="border: none;">
+            <legend style="font-size: 1.5em;">Personal Information</legend>
 
+            <label for="name" style="display:block; margin: 10px 0;">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+            <label for="nim" style="display:block; margin: 10px 0;">Student ID (NIM):</label>
+            <input type="text" id="nim" name="nim" required pattern="\d+" title="Only numbers are allowed" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+            <label for="email" style="display:block; margin: 10px 0;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+            <label for="code" style="display:block; margin: 10px 0;">Class Code:</label>
+            <input type="text" id="code" name="code" required pattern="[A-Za-z0-9\s]+" title="Combination of letters and numbers are allowed" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+            <label for="phone" style="display:block; margin: 10px 0;">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required pattern="\d+" title="Only numbers are allowed" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+            <label style="margin: 10px 0;">Gender:</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br><br>
+        </fieldset>
+
+        <fieldset style="border: none;">
+            <legend style="font-size: 1.5em;">Academic Information</legend>
+            <label for="address" style="display:block; margin: 10px 0;">Address:</label>
+            <input type="text" id="address" name="address" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+            <label for="faculty" style="display:block; margin: 10px 0;">Faculty:</label>
+            <select id="faculty" name="faculty" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="creative-industry">Creative Industry Faculty</option>
+                <option value="retail-management">Retail Management Faculty</option>
+            </select><br>
+
+            <label for="major" style="display:block; margin: 10px 0;">Major:</label>
+            <select id="major" name="major" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="industrial-engineering">Industrial Engineering</option>
+                <option value="informatics-engineering">Informatics Engineering</option>
+                <option value="visual-communication-design">Visual Communication Design</option>
+                <option value="retail-management">Retail Management</option>
+                <option value="digital-business">Digital Business</option>
+            </select><br>
+
+            <label for="semester" style="display:block; margin: 10px 0;">Semester:</label>
+            <select id="semester" name="semester" onchange="toggleSubjects()" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br>
+
+            <div id="subjects" style="display:none;">
+                <h3>Subjects:</h3>
+                <input type="checkbox" id="pancasila" name="subjects" value="Pancasila">
+                <label for="pancasila">Pancasila</label><br>
+                <input type="checkbox" id="math" name="subjects" value="Basic Mathematics">
+                <label for="math">Basic Mathematics</label><br>
+            </div>
+        </fieldset>
+
+        <button type="submit" style="display:block; margin:auto; padding: 10px 20px; font-size: 1.2em; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+    </form>
+</body>
+</html>
