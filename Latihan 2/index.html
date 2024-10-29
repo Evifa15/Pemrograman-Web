@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Personal Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Menambahkan Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Menambahkan font Great Vibes -->
+    <style>
+        /* Menambahkan background menggunakan gambar dari folder assets */
+        body {
+            background-image: url('assets/LandingPage.jpg'); /* Ganti dengan URL gambar yang diinginkan */
+            background-size: cover; /* Agar gambar mengisi seluruh layar */
+            background-position: center; /* Posisikan gambar di tengah */
+            color: white; /* Mengubah warna teks menjadi putih agar kontras dengan background */
+        }
+        .hero-section {
+            background-color: rgba(0, 0, 0, 0.6); /* Layer transparan untuk teks lebih terlihat */
+            padding: 150px 20px; /* Padding untuk ruang di sekitar teks */
+            border-radius: 10px; /* Sudut yang membulat */
+            margin-top: 100px; /* Margin atas untuk memisahkan dari navbar */
+        }
+        h1 {
+            font-family: 'Great Vibes', cursive; /* Menggunakan font Great Vibes untuk judul utama */
+            font-size: 5rem; /* Ukuran font yang diperbesar untuk judul */
+            letter-spacing: 2px; /* Menambahkan jarak antar huruf */
+            margin-bottom: 10px; /* Jarak bawah untuk memberi ruang antara judul dan subjudul */
+        }
+        h2 {
+            font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins untuk sub judul */
+            font-weight: 600; /* Menggunakan weight 600 */
+            font-size: 2rem; /* Ukuran font yang lebih kecil dari h1 */
+            margin-top: 20px; /* Margin atas untuk memisahkan dari judul utama */
+        }
+        p {
+            font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins untuk teks penjelasan */
+            font-size: 1rem; /* Ukuran font untuk deskripsi (kecilkan) */
+            margin-top: 20px; /* Margin atas untuk memberi ruang antara subjudul dan penjelasan */
+            padding: 20px 0; /* Padding untuk memberi ruang atas dan bawah pada deskripsi */
+            max-width: 600px; /* Maksimal lebar deskripsi */
+            margin-left: auto; /* Pusatkan secara horizontal */
+            margin-right: auto; /* Pusatkan secara horizontal */
+        }
+        .btn-get-started {
+            background-color: #4E3B31; /* Warna tombol cokelat gelap */
+            color: white; /* Warna teks tombol putih */
+        }
+        .btn-get-started:hover {
+            background-color: #3e2924; /* Warna ketika hover lebih gelap */
+            color: white; /* Tetap putih saat hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Personal Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center mt-5 hero-section">
+        <h1>Welcome to</h1>
+        <h2>My Personal Page</h2>
+        <p>Get to know me more! This is a space where I share my thoughts and experiences. Dive into my world of writing and creativity.</p>
+        <!-- Tombol yang mengarah ke halaman login -->
+        <a href="login.html" class="btn btn-get-started mt-4">Get Started</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
