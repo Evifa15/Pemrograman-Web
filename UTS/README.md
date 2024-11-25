@@ -5,6 +5,29 @@
 **Heavenly Baked** adalah sebuah proyek website sederhana yang dibuat untuk memenuhi tugas Ujian Tengah Semester (UTS) dalam mata kuliah Pemrograman Web. Website ini bertujuan untuk menampilkan informasi tentang toko roti Heavenly Baked, termasuk daftar produk, kontak, dan fitur menarik lainnya. Proyek ini dibangun menggunakan HTML, CSS, dan JavaScript.
 
 ## **Struktur Direktori**
+HEAVENLY-BAKED/
+├── .vscode/
+│   └── launch.json         
+├── css/      
+│   └── all.min.css
+│   └── bootdtrap.min.css  
+│   └── product.css
+│   └── signin.css
+│   └── signup.css
+│   └── style.css
+├── images                 
+├── js/
+│   └── bootstrap.bundle.min.js
+│   └── script.js
+│   └── signin.js
+├── webfonts/              
+├── aboutus.html          
+├── dashboard.html           
+├── index.html                       
+├── product.html            
+├── promo.html               
+├── signin.html              
+├── signup.html              
 
 ## **Fitur**
 1. **Halaman Utama**: Menampilkan informasi tentang Heavenly Baked, termasuk sedikit deskripsi toko.
