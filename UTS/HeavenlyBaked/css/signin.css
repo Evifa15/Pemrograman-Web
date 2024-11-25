@@ -1,0 +1,70 @@
+/* File: signin.css atau signup.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Latar belakang lembut */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  small a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  small a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
