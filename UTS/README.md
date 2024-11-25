@@ -1,5 +1,5 @@
 # Ujian Tengah Semester (UTS) 
-## **Heavenly Baked**
+## **Company Named : Heavenly Baked**
 
 ## **Deskripsi**
 **Heavenly Baked** adalah sebuah proyek website sederhana yang dibuat untuk memenuhi tugas Ujian Tengah Semester (UTS) dalam mata kuliah Pemrograman Web. Website ini bertujuan untuk menampilkan informasi tentang toko roti Heavenly Baked, termasuk daftar produk, kontak, dan fitur menarik lainnya. Proyek ini dibangun menggunakan HTML, CSS, dan JavaScript.
