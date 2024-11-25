@@ -1,4 +1,4 @@
-# **Ujian Tengah Semester (UTS) **
+# Ujian Tengah Semester (UTS) 
 ## **Heavenly Baked**
 
 ## **Deskripsi**
