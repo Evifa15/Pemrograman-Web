@@ -24,6 +24,7 @@
 
 **Halaman Utama:**
 ![HeavenlyBaked](https://github.com/Evifa15/Pemrograman-Web/blob/main/UTS/HeavenlyBaked/images/Sc%201.png)
+![HeavenlyBaked](https://github.com/Evifa15/Pemrograman-Web/blob/main/UTS/HeavenlyBaked/images/Sc%202.png)
 
 ## **About Me**
 Dibuat oleh:
