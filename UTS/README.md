@@ -22,8 +22,8 @@
 
 ## **Screenshot**
 
-**Contoh placeholder:**
-![Screenshot Placeholder](https://via.placeholder.com/800x400.png?text=Heavenly+Baked+Homepage)
+**Halaman Utama:**
+![Heavenly Baked Homepage](images/sc1.png)
 
 ## **About Me**
 Dibuat oleh:
