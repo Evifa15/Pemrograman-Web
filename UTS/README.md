@@ -23,7 +23,7 @@
 ## **Screenshot**
 
 **Halaman Utama:**
-![HeavenlyBaked](images/sc1.png)
+![HeavenlyBaked](images/sc 1.png)
 
 ## **About Me**
 Dibuat oleh:
