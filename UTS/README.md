@@ -30,9 +30,9 @@
 ![HeavenlyBaked](https://github.com/Evifa15/Pemrograman-Web/blob/main/UTS/HeavenlyBaked/images/Sc%205.png)
 ![HeavenlyBaked](https://github.com/Evifa15/Pemrograman-Web/blob/main/UTS/HeavenlyBaked/images/Sc%206.png)
 ![HeavenlyBaked](https://github.com/Evifa15/Pemrograman-Web/blob/main/UTS/HeavenlyBaked/images/Sc%207.png)
-**Sign In**
+**Sign In:**
 ![HeavenlyBaked](https://github.com/Evifa15/Pemrograman-Web/blob/main/UTS/HeavenlyBaked/images/Sc%208.png)
-**Sign Out**
+**Sign Out:**
 ![HeavenlyBaked](https://github.com/Evifa15/Pemrograman-Web/blob/main/UTS/HeavenlyBaked/images/Sc%209.png)
 
 ## **About Me**
