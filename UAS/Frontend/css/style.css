@@ -1,1 +1,119 @@
+/* Styling Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* Navbar / Header */
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left a, .header-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e64a19;
+}
+
+/* Container untuk iklan */
+.iklan-container {
+    width: 100%;
+    height: 250px; /* Sesuaikan tinggi iklan */
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Box yang berisi video */
+.iklan-box {
+    display: flex;
+    width: 300%; /* 3 video, maka 300% */
+    animation: slideIklan 10s infinite ease-in-out; /* Animasi bergeser */
+}
+
+/* Video di dalam kotak iklan */
+.iklan-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animasi sliding */
+@keyframes slideIklan {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+
+/* Kategori */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.category {
+    text-align: center;
+    font-size: 14px;
+}
+
+.category img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    margin-top: 20px;
+}
