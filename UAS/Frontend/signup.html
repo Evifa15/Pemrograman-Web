@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('images/logreg.jpg');
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+        .form-container {
+            background-color: rgba(183, 185, 226, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        footer {
+            background-color: #9fb1c4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center mb-4">Sign Up</h2>
+        <form id="registerForm">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="registerName" placeholder="Full Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="registerUsername" placeholder="Username" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="registerPassword" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p class="mb-0">@Copyright by 22552011244_Bunga Aliyya Lestari_TIF RP 22 CID.</p>
+</footer>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let name = document.getElementById("registerName").value;
+        let username = document.getElementById("registerUsername").value;
+        let password = document.getElementById("registerPassword").value;
+
+        // Simpan nama, username, email, dan password di localStorage
+        localStorage.setItem("name", name);
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password);
+
+        alert("Akun berhasil dibuat! Silakan login.");
+        window.location.href = "signin.html";  // Redirect ke halaman login setelah registrasi
+    });
+</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

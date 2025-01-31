@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('images/logreg.jpg');
+            background-size: cover;
+        }
+        .form-container {
+            background-color: rgba(183, 185, 226, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        .error {
+            color: red;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #9fb1c4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Form Login -->
+    <div class="form-container">
+        <h2 class="text-center mb-4">Sign In</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="loginUsername" placeholder="Username" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign In <Input:datetime-local></Input:datetime-local></button>
+            <div id="usernameError" class="error mt-3"></div>
+            <div id="passwordError" class="error mt-1"></div>
+        </form>
+        <p class="mt-3 text-center">Don't have an account? <a href="register.html">Sign Up</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-0">@Copyright by 22552011244_Bunga Aliyya Lestari_TIF RP 22 CID.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let username = document.getElementById("loginUsername").value;
+            let password = document.getElementById("loginPassword").value;
+            let usernameError = document.getElementById("usernameError");
+            let passwordError = document.getElementById("passwordError");
+
+            // Reset error messages
+            usernameError.textContent = '';
+            passwordError.textContent = '';
+
+            // Ambil username dan password yang disimpan
+            let savedUsername = localStorage.getItem("username");
+            let savedPassword = localStorage.getItem("password");
+
+            // Validasi username
+            if (username !== savedUsername) {
+                usernameError.textContent = "Username tidak ditemukan!";
+            }
+
+            // Validasi password
+            if (username === savedUsername && password !== savedPassword) {
+                passwordError.textContent = "Password salah!";
+            }
+
+            // Jika username dan password benar, tampilkan pesan sukses dan arahkan ke halaman utama
+            if (username === savedUsername && password === savedPassword) {
+                alert("Login berhasil!");
+                window.location.href = "Menu Utama.html"; // Halaman yang dituju setelah login berhasil
+            }
+        });
+    </script>
+</body>
+</html>
