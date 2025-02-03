@@ -3,11 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 /* Navbar / Header */
 header {
-    background-color: #ff5722;
+    background-color: #16C47F;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -15,16 +16,18 @@ header {
     align-items: center;
 }
 
-.header-left, .header-right {
+.header-left, header, .header-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 7px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-left a, .header-right a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-right a:hover {
@@ -35,60 +38,87 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .search-bar input[type="text"] {
-    flex: 1;
-    padding: 10px;
+    width: 500px;  /* Mengatur panjang kotak input menjadi 400px */
+    padding: 2px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 7px;
 }
+
 
 .search-bar button {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    background: none; /* Menghapus background */
+    border: none;     /* Menghapus border */
+    padding: 0;       /* Menghapus padding */
+    cursor: pointer; /* Agar tombol tetap bisa di-klik */
+    outline: none;        /* Menghapus outline saat tombol di klik */
 }
 
-.search-bar button:hover {
-    background-color: #e64a19;
+.search-bar button i {
+    font-size: 20px;  /* Ukuran ikon */
+    color: white;     /* Warna ikon */
 }
 
-/* Container untuk iklan */
-.iklan-container {
-    width: 100%;
-    height: 250px; /* Sesuaikan tinggi iklan */
-    overflow: hidden;
-    position: relative;
-    margin: 20px 0;
-}
 
-/* Box yang berisi video */
-.iklan-box {
+
+/*Carousel Iklan*/
+/* Container untuk memusatkan slider */
+.slider-container {
     display: flex;
-    width: 300%; /* 3 video, maka 300% */
-    animation: slideIklan 10s infinite ease-in-out; /* Animasi bergeser */
+    justify-content: center;  /* Pusatkan secara horizontal */
+    align-items: center;      /* Pusatkan secara vertikal */
+    width: 100%;              /* Lebar penuh */
+    padding: 20px;            /* Beri sedikit ruang di sekitar */
+    margin-top: 15px;         /* Jarak dari header ke slider */
+    
 }
 
-/* Video di dalam kotak iklan */
-.iklan-box video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+/* Kotak pembungkus dengan bayangan & border */
+.slider-wrapper {
+    background: white;        /* Warna latar belakang kotak */
+    border-radius: 20px;      /* Sudut membulat */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    align-content: center;
+    
 }
 
-/* Animasi sliding */
-@keyframes slideIklan {
-    0% { transform: translateX(0%); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0%); }
+/* Style Slider */
+.slider {
+    width: 40vw; 
+    max-width: 1400px; 
+    height: 20vw;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
+.slides {
+    display: flex;  /* Biar semua slide dalam satu baris */
+    width: 300%;  /* Total lebar dari semua slide = lebar slider */
+    transition: transform 0.5s ease-in-out; /* Efek transisi */
+}
+
+.slide {
+    width: 100%; /* Agar setiap slide memenuhi lebar container */
+    height: 100%; /* Pastikan slide mengisi seluruh tinggi container */
+    flex-shrink: 0; /* Jangan biarkan elemen mengecil */
+}
+
+
+.slide img {
+    width: 100%;  /* Gambar mengisi lebar slide */
+    height: 100%; /* Gambar mengisi tinggi slide */
+    object-fit: cover;  /* Gambar akan mengisi area tanpa terdistorsi, namun akan terpotong jika perlu */
+}
+
+/*H2*/
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   padding-left: 45%;
+}
 
 /* Kategori */
 .categories {
@@ -96,7 +126,9 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 15px;
     padding: 20px;
+    
 }
+
 
 .category {
     text-align: center;
@@ -113,7 +145,9 @@ header {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #ff5722;
+    background-color: #16C47F;
     color: white;
     margin-top: 20px;
 }
+
+
