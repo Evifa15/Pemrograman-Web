@@ -2,23 +2,28 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css"> <!-- Hubungkan ke CSS eksternal -->
-    <title>Shopee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Memuat font Montserrat dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+     <title>PasarSeger</title>
 </head>
 <body>
 
 <header>
     <div class="header-left">
         <img src="images/logo.png" alt="Logo" width="100">
-        <span><strong>Shopee</strong></span>
+        <span><strong>PasarSegar</strong></span>
     </div> 
     <div class="search-bar">
         <input type="text" placeholder="Cari produk...">
-        <button>Cari</button>
-    </div>   
+        <!-- Ikon pencarian -->
+        <button><i class="fa fa-search"></i></button>
+    </div>  
     <div class="header-right">
         <a href="chat.html" class="btn btn-chat"><i class="fas fa-comments"></i></a>
         <a href="chart.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i></a>
@@ -26,14 +31,35 @@
     </div>
 </header>
 
-<!-- Kotak Iklan -->
-<div class="iklan-container">
-    <div class="iklan-box">
-        <video src="videos/iklan1.mp4" muted autoplay loop></video>
-        <video src="videos/iklan2.mp4" muted autoplay loop></video>
-        <video src="videos/iklan3.mp4" muted autoplay loop></video>
+<!-- Carousel automatic Slider (Iklan) -->
+<div class="slider-container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slides">
+
+                <!-- Gambar Slider -->
+                <div class="slide first">
+                    <img src="../assets/image/Iklan/img1.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="../assets/image/Iklan/img2.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="../assets/image/Iklan/img3.png" alt="Image 3">
+                </div>
+
+                <!-- Navigasi otomatis -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
+<script src="../Backend/script.js" defer></script>
 
 
 <div>
@@ -41,27 +67,24 @@
 </div>
 <div class="categories">
     <div class="category">
-        <img src="https://via.placeholder.com/60" alt="Elektronik">
-        <p>Elektronik</p>
+        <img src="../assets/image/Sayur/S.png" alt="Sayur">
+        <p>Sayur</p>
     </div>
     <div class="category">
-        <img src="https://via.placeholder.com/60" alt="Komputer & Aksesoris">
-        <p>Komputer & Aksesoris</p>
+        <img src="../assets/image/Buah/B.png" alt="Buah">
+        <p>Buah</p>
     </div>
     <div class="category">
-        <img src="https://via.placeholder.com/60" alt="Handphone & Aksesoris">
-        <p>Handphone & Aksesoris</p>
+        <img src="../assets/image/Daging-Ikan/I.png" alt="Ikan">
+        <p>Ikan</p>
     </div>
     <div class="category">
-        <img src="https://via.placeholder.com/60" alt="Pakaian Pria">
-        <p>Pakaian Pria</p>
-    </div>
-    <div class="category">
-        <img src="https://via.placeholder.com/60" alt="Sepatu Pria">
-        <p>Sepatu Pria</p>
+        <img src="../assets/image/Daging-Ikan/D.png" alt="Daging">
+        <p>Daging</p>
     </div>
 </div>
 
+<script src="script.js" defer></script>
 <footer>
     &copy; NIM_Nama Kelompok Dan Nama Anggota Kelompok_Kelas_UAS Web 1. All rights reserved.
 </footer>
